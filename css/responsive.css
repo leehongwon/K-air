@@ -1,0 +1,566 @@
+@charset "utf-8";
+
+/* 반응형 */
+
+@media screen and (max-width: 1060px) {
+    /* 헤더 */
+    .first-head {
+        display: none;
+    }
+    .second-head {
+        height: 5.1rem;
+        padding: 0 4.5rem 0 2rem;
+    }
+    header nav {
+        display: none;
+    }
+    .second-head .logo {
+        padding-bottom: 0;
+    }
+    .second-head .logo .koreanAir {
+        width: 13.2rem;
+        height: 4.4rem;
+        background-size: 132px 44px;
+    }
+    .second-head .logo .steam {
+        display: none;
+    }
+    .second-head .gnb {
+        padding-top: 0;
+    }
+    .second-head .gnb ul li:nth-child(1) {
+        margin-right: 0.6rem;
+    }
+    .second-head .gnb ul li:nth-child(2) {
+        padding-left: 0;
+    }
+    .second-head .gnb .login {
+        width: 100%;
+        min-width: 4.4rem;
+        margin: 0 0.2rem 0 0;
+        font-size: 1.1rem;
+        line-height: 1.7rem;
+        padding: 0.3rem 1rem 0.4rem;
+        border-radius: 1.5rem;
+    }
+    .second-head .gnb .search {}
+    .menu-trigger {
+        display: block;
+    }
+
+    /* 배너 */
+    .banner {
+        height: 59.88rem;
+    }
+    .banner .banner-inner {
+        padding: 2rem;
+        min-height: 59.88rem;
+    }
+    .title-wrap > input[type="radio"] + label {
+        border-radius: 0;
+        font-size: 1.2rem;
+    }
+    .title-wrap > input[type="radio"]:nth-child(1) + label {
+        border-top-left-radius: 1.2rem;
+    }
+    .title-wrap > input[type="radio"]:nth-child(7) + label {
+        border-top-right-radius: 1.2rem;
+    }
+    /* box1 */
+    .service-con {
+        padding: 3rem 2rem 2rem;
+        border-radius: 0 0 1.2rem 1.2rem;
+    }
+    .service-inner .reserve-top {
+        flex-direction: column;
+        margin-top: -1rem;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .reserve-top .reservation {
+        width: 20.5rem;
+        margin: 0 auto;
+    }
+    .reservation li {
+        display: inline-block;
+    }
+    .reservation li:nth-child(1) {
+        max-width: 8.6rem;
+        width: 100%;
+    }
+    .reservation li:nth-child(1) a {
+        display: block;
+        width: 100%;
+        min-height: 3.2rem;
+        line-height: 3.2rem;
+        font-size: 1.4rem;
+    }
+    .reservation li:nth-child(2) {
+        min-width: 8.6rem;
+        padding: 0.2rem 1.8rem;
+        border-radius: 3.2rem;
+        transition: .2s;
+    }
+    .reservation li:nth-child(2) a {
+        width: 100%;
+        min-height: 3.2rem;
+        line-height: 3.2rem;
+        font-size: 1.4rem;
+    }
+    .reserve-top .way {
+        justify-content: center;
+        margin-top: 0.9rem;
+    }
+    .around .way-inner {
+        margin-top: 0.8rem;
+        padding: 0 1.2rem;
+    }
+    .single .way-inner {
+        margin-top: 0.8rem;
+        padding: 0 1.2rem;
+    }
+    .way-right .multi {
+        margin-top: 0.8rem;
+        padding: 0 1.2rem;
+    }
+    .service-inner .reserve-bottom {
+        flex-direction: column;
+    }
+    .reserve-bottom .reserve-btn {
+        width: 100%;
+        padding: 1.4rem 0;
+        border-bottom: 0.1rem dashed #ddd;
+        margin: 0.1rem 0 -0.5rem;
+    }
+    .reserve-btn .depart {
+        width: 41%;
+    }
+    .depart .depart-desc {
+        font-size: 1.4rem;
+    }
+    .reserve-btn .reverse {
+        width: 4.4rem;
+        height: 4.4rem;
+        margin: 1.6rem auto 0;
+    }
+    .reserve-btn .arrive {
+        width: 41%;
+    }
+    .arrive .arrive-desc {
+        font-size: 1.4rem;
+    }
+    .reserve-bottom .depart-date {
+        width: 100%;
+    }
+    .depart-date p {
+        display: none;
+    }
+    .depart-date .round {
+        padding: 1.3rem 0;
+        min-height: 3rem;
+    }
+    .round .round-inner {
+        min-height: 3rem;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 0;
+        font-family: 'NotoSansKR-Light';
+    }
+    .round .round-inner::before {
+        width: 2.8rem;
+        min-width: 2.8rem;
+        height: 2.8rem;
+        background-size: 2.8rem 2.8rem;
+    }
+    .reserve-bottom .passenger {
+        width: 100%;
+        padding: 1rem 0 0;
+    }
+    .passenger p {
+        margin: 0;
+    }
+    .passenger .howmany {
+        background-size: 3rem 3rem;
+    }
+    .reserve-bottom .class {
+        width: 100%;
+        padding: 1rem 0 0;
+    }
+    .class p  {
+        margin: 0;
+    }
+    .class .sit {
+        background-size: 3rem 3rem;
+    }
+    .reserve-bottom .plane-search {
+        width: 100%;
+        margin-top: 3rem;
+        padding: 0;
+    }
+    .reserve-bottom .plane-search a {
+        height: 4.2rem;
+        border-radius: 1.2rem;
+    }
+    /* box2,3 */
+    .service-con .inquiry {
+         flex-direction: column;
+         margin: 0;
+    }
+    .inquiry .R-number {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    .R-number p {
+        margin: 0;
+    }
+    .inquiry .R-date {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    .R-date p {
+        margin: 0;
+    }
+    .inquiry .R-lastname {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    .R-lastname p {
+        margin: 0;
+    }
+    .inquiry .R-firstname {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    .R-firstname p {
+        margin: 0;
+    }
+    .inquiry .R-search {
+        width: 100%;
+    }
+    .service-con .inquiry-info {
+        padding: 0.9rem 0 0 0;
+    }
+
+    /* box4 */
+    .box4 .reservation li:nth-child(1) {
+        padding: 0;
+        max-width: 10rem;
+    }
+    .reserve-bottom .reserve-btn2 {
+        width: 100%;
+        padding: 1.4rem 0;
+        border-bottom: 0.1rem dashed #ddd;
+        margin: 0.1rem 0 -0.5rem;
+    }
+    .reserve-btn .depart {
+        width: 41%;
+    }
+    .depart .depart-desc {
+        font-size: 1.4rem;
+    }
+    .reserve-btn .reverse {
+        width: 4.4rem;
+        height: 4.4rem;
+        margin: 1.6rem auto 0;
+    }
+    .reserve-btn .arrive {
+        width: 41%;
+    }
+    .arrive .arrive-desc {
+        font-size: 1.4rem;
+    }
+    .reserve-bottom .depart-date2 {
+        width: 100%;
+    }
+    .depart-date2 p {
+        display: block;
+        margin: 0;
+        padding-top: 10px;
+    }
+    .depart-date2 .round {
+        padding-top: 10px;
+        min-height: 3rem;
+    }
+    .depart-date2 .round .round-inner {
+        min-height: 3rem;
+        justify-content: left;
+        align-items: center;
+        letter-spacing: 0;
+        font-family: 'NotoSansKR-Light';
+    }
+    .round .round-inner::before {
+        width: 2.8rem;
+        min-width: 2.8rem;
+        height: 2.8rem;
+        background-size: 2.8rem 2.8rem;
+    }
+    .reserve-bottom .passenger {
+        width: 100%;
+        padding: 1rem 0 0;
+    }
+    .passenger p {
+        margin: 0;
+    }
+    .passenger .howmany {
+        background-size: 3rem 3rem;
+    }
+    .reserve-bottom .class {
+        width: 100%;
+        padding: 1rem 0 0;
+    }
+    .class p  {
+        margin: 0;
+    }
+    .class .sit {
+        background-size: 3rem 3rem;
+    }
+    .reserve-bottom .plane-search2 {
+        width: 100%;
+        margin-top: 3rem;
+        padding: 0;
+    }
+    .reserve-bottom .plane-search a {
+        height: 4.2rem;
+        border-radius: 1.2rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* 슬라이드 */
+    .slide {
+        padding-top: 5rem;
+        margin-bottom: 5rem;
+    }
+    .slide .swiper .swiper-wrapper .swiper-slide {
+        width: 474.327px !important;
+    }
+    .slide .swiper .swiper-wrapper .swiper-slide a .slide-desc {
+        min-height: 8.4rem;
+        padding: 1.6rem 2.4rem;
+        font-size: 1.6rem;
+        line-height: 1.63;
+    }
+    /* 공지사항 */
+    .notice .notice-inner .top-notice {
+        margin-bottom: 1.6rem;
+    }
+    .notice .notice-inner .top-notice h2 {
+        font-size: 2rem;
+    }
+    .notice .notice-inner .top-notice a {
+        font-size: 1.2rem;
+    }
+    .notice .notice-inner .top-notice a::after {
+        height: 6px;
+    }
+    .notice .notice-inner .bottom-notice {
+        flex-direction: column;
+    }
+    .notice .notice-inner .bottom-notice ul li a {
+        flex-direction: column;
+        padding: 2rem 0;
+    }
+    .notice .notice-inner .bottom-notice ul li a .notice-date {
+        margin-top: 0.9rem;
+    }
+    .notice .notice-inner .bottom-notice .notice-image {
+        margin-top: 2.4rem;
+        max-width: 100%;
+        height: 21rem;
+        overflow: hidden;
+    }
+    .notice .notice-inner .bottom-notice .notice-image a {
+        height: 100%;
+    }
+    .notice .notice-inner .bottom-notice .notice-image a .notice-text {
+        padding: 3rem 2rem 1rem 1.6rem;
+    }
+    /* 콘텐츠 */
+    .content .content-inner {
+        margin-top: 6rem;
+        padding: 4rem 2rem;
+    }
+    .main-con .con-head {
+        margin-bottom: 1.6rem;
+    }
+    .con-head h2 {
+        font-size: 2rem;
+    }
+    .main-con .accordion {
+        flex-direction: column;
+        align-items: center;
+    }
+    .accordion .accordion-list {
+        margin: 0 0 0.8rem 0;
+        padding: 0;
+    }
+    .accordion .accordion-list > a {
+        flex-direction: row-reverse;
+        justify-content: left;
+        font-size: 1.4rem;
+        padding: 1rem 2rem;
+    }
+    .accordion .accordion-list > a::before {
+        content: '';
+        position: absolute;
+        right: 2rem;
+        top: 2.2rem;
+        bottom: 0;
+        width: 1.6rem;
+        height: 1.6rem;
+        background: url('../images/icon-arrow-16-x-16-black-down.svg') 0 50% no-repeat;
+    }
+    .accordion .accordion-list > a.arrowActive::before {
+        rotate: 180deg;
+    }
+
+
+    .accordion .accordion-list a .con-title {
+        display: inline-block;
+        margin-left: 2rem;
+    }
+    .accordion .accordion-list a .con-icon {
+        display: inline-block;
+        width: 4rem;
+        height: 4rem;
+        margin: 0;
+    }
+    .accordion .accordion-list .acc-con {
+        display: none;
+    }
+    .accordion .accordion-list:hover {
+        text-decoration: none;
+    }
+    .accordion .accordion-list:hover .acc-con {
+        display: none;
+    }
+    .accordion .accordion-list:hover .accordion .accordion-list::before {
+        display: none;
+    }
+    .accordion .accordion-list.non-active .m-acc {
+        display: block;
+    }
+    .m-acc .m-acc-list {
+        margin: 0 3rem 0 8rem;
+        padding-bottom: 2rem;
+    } 
+    .m-acc-list .m-acc-item {
+        padding: 1rem 0;
+        margin: 0;
+    }
+    .m-acc-item a {
+        padding: 0;
+        word-break: break-word;
+        font-family: 'NotoSansKR-Regular';
+        font-size: 1.4rem;
+        display: block;
+        text-align: left;
+    }
+
+    /* 푸터 */
+    /* 회사소개 */
+    footer .company {
+        padding: 0.6rem 2rem 2.3rem;
+    }
+    footer .company .c-inner .f-depth1 {
+        display: block;
+        padding-right: 0;
+    }
+    footer .company .c-inner .f-depth1 .f-depth1-1 {
+        width: 100%;
+        border-bottom: 1px solid #e7eaf0;
+    }
+    footer .company .c-inner .f-depth1 .f-depth1-1 h2 {
+        margin-bottom: 0;
+        padding: 1.4rem 5rem 1.4rem 1rem;
+        font-size: 1.4rem;
+        background: url('../images/snb__title.svg') right 1.7rem center/16px 16px no-repeat;
+    }
+    footer .company .c-inner .f-depth1 .f-depth1-1 h2.arrow_active{
+        background: url('../images/snb__title--expand.svg') right 1.7rem center/16px 16px no-repeat;
+    }
+
+    footer .company .c-inner .f-depth1 .f-depth1-1 ul {
+        padding-bottom: 2.4rem;
+        display: none;
+    }
+    footer .company .c-inner .f-depth1 .f-depth1-1 ul li {}
+    footer .company .c-inner .f-depth1 .f-depth1-1 ul li a {
+        padding: 0.5rem 1rem;
+        line-height: 1.71;
+        display: block;
+        margin: 0;
+    }
+    footer .company .c-inner .c-icon {
+        position: inherit;
+        margin-top: 2.5rem;
+    }
+    footer .company .c-inner .c-icon .sns {
+        justify-content: center;
+    }
+    footer .company .c-inner .c-icon .sns li {
+        padding: 0 0.4rem;
+        vertical-align: middle;
+    }
+    footer .company .c-inner .app {
+        position: inherit;
+        margin-top: 0;
+        top: 0;
+    }
+    footer .company .c-inner .app .appstore {
+        justify-content: center;
+        margin-top: 2rem;
+    }
+    footer .company .c-inner .app .appstore li {
+        margin: 0 0.8rem 2rem;
+    }
+    footer .company .c-inner .app .busan {
+        justify-content: center;
+    }
+    footer .company .c-inner .app .busan img {
+        margin: 0;
+    }
+    /* 컨택 */
+    footer .contact .contact-inner .contact-desc {
+        width: 100%;
+    }
+    footer .contact .contact-inner .contact-desc ul {
+        display: none;
+    }
+    footer .contact .contact-inner .contact-mark {
+        display: none;
+    }
+    footer .contact .contact-inner .copyright {
+        margin-top: 0.8rem;
+        clear: both;
+    }
+    /* 플로팅 버튼 */
+    .floating-btn {
+        bottom: 6rem;
+        right: 2rem;
+    }
+    .floating-btn-wrap .press {
+        width: 5rem;
+        height: 5rem;
+    }
+    .floating-btn-wrap .expand-btn {
+        display: none;
+    }
+    .floating-btn-wrap .go-top {
+        width: 5rem;
+        height: 5rem;
+        background-size: 24px 24px;
+    }
+}
